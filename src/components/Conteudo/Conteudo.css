@@ -1,0 +1,53 @@
+/* Conteudo.css */
+
+.content {
+    padding: 20px;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+}
+
+.movies-container {
+    display: flex;
+    justify-content: center;
+}
+
+.movies {
+    display: flex; /* Usando flexbox para exibir os filmes em uma linha */
+    flex-wrap: nowrap; /* Evita que os filmes quebrem para outra linha */
+    gap: 20px; /* Espaçamento entre os filmes */
+    padding:30px 0; /* Espaçamento interno para os filmes */
+    overflow-x: auto;
+    overflow-y: hidden; /* Adicionando scroll horizontal caso haja muitos filmes */
+}
+
+.movie {
+    flex: 0 0 auto; /* Faz cada filme ter uma largura automática */
+    width: 250px; /* Largura fixa para cada filme */
+    background-color: #BDD7EE; /* Cor de fundo azul claro */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden; /* Evita que o conteúdo ultrapasse o cartão */
+}
+
+.movie:hover {
+    transform: scale(1.05); /* Efeito de escala no hover */
+}
+
+.movie img {
+    width: 100%; /* Imagem ocupa toda a largura do cartão */
+    border-radius: 4px; /* Cantos arredondados na imagem */
+}
+
+.movie .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Cor do texto escuro */
+}
+
+.movie .overview {
+    font-size: 14px;
+    color: #666; /* Cor do texto cinza */
+    margin-bottom: 10px;
+}

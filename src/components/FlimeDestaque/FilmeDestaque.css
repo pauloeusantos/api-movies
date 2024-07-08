@@ -1,0 +1,49 @@
+.filmedestaque {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.filmedestaque .poster {
+    width: 20%;
+    height:10%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.filmedestaque .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+    color: #FFF; /* Texto branco */
+}
+
+.filmedestaque.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filmedestaque.overview {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.filmedestaque .watch-button {
+    background-color: #02BEDB; /* Azul mais claro */
+    color: #FFF; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filmedestaque .watch-button:hover {
+    background-color: #0272A8; /* Azul mais escuro */
+}

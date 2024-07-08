@@ -1,5 +1,4 @@
 import './Home.css'
-import Header from '../../components/Header/Header'
 import Conteudo from '../../components/Conteudo/Conteudo'
 import logo from '../../assets/logo.webp'
 import { useState } from 'react'
@@ -13,7 +12,6 @@ export default function Home(){
                 <nav>
                     <ul>
                         <li><img src={logo} alt="" width={50 + 'px'}/></li>
-                        <li>Search</li>
                     </ul>
                     <ul>
                         <li><a href="">Home</a></li>
