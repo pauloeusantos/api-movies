@@ -4,7 +4,7 @@ import './Conteudo.css';
 import { useState, useEffect } from 'react';
 import Movie from '../Movie/Movie';
 import Loading from '../Loading/Loading';
-import FilmeDestaque from '../FilmeDestaque/FilmeDestaque';
+import FilmeDestaque from '../FlimeDestaque/FilmeDestaque';
 
 export default function Conteudo(props) {
     const [movies, setMovies] = useState([]);
