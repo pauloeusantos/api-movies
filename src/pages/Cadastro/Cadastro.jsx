@@ -14,7 +14,7 @@ const Cadastro = () => {
     
         try {
             const response = await http.post('/register/user',  { 
-                name,
+                name,   
                 email,
                 password : senha,
             });
