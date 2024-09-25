@@ -15,8 +15,8 @@ export default function Home(){
                     </ul>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">Login</a></li>
-                        <li><a href="/">Register</a></li>
+                        <li><a href="/Login">Login</a></li>
+                        <li><a href="/Cadastro">Register</a></li>
                     </ul>
                 </nav>
                 <div className="nav-options">
