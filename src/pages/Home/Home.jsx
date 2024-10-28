@@ -14,8 +14,8 @@ export default function Home(){
                         <li><img src={logo} alt="" width={50 + 'px'}/></li>
                     </ul>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/Login">Login</a></li>
+                        <li><a href="/Home">Home</a></li>
+                        <li><a href="/">Login</a></li>
                         <li><a href="/Cadastro">Register</a></li>
                     </ul>
                 </nav>
