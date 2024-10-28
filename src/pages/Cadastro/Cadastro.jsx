@@ -39,6 +39,14 @@ const Cadastro = () => {
             setErrorMessage(error.response?.data.msg || 'Erro ao registrar');
         }
     };
+
+    const handle = () => {
+        navigate('/');
+    };
+
+     const handleHome = () => {
+        navigate('/Home');
+    };
     
 
     return (
@@ -74,6 +82,14 @@ const Cadastro = () => {
                 />
 
                 <button type="submit">Cadastrar</button>
+
+                <button type="button" onClick={handle} className="button">
+                   Login
+                </button>
+
+                <button type="button" onClick={handleHome} className="button">
+                    Home
+                </button>
             </form>
         </div>
     );

@@ -2,12 +2,14 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import './Login.css'; 
 import { http } from "../../App";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [errorMessage, setErrorMessage] = useState(''); 
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate(); 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -37,6 +39,14 @@ const Login = () => {
         }
     };
 
+    const handle = () => {
+        navigate('/Cadastro');
+    };
+
+     const handleHome = () => {
+        navigate('/Home');
+    };
+
     return (
         <div className="login-container">
             <h1>Login de Usuário</h1>
@@ -62,6 +72,14 @@ const Login = () => {
 
                 <button type="submit" disabled={loading}>
                     {loading ? 'Entrando...' : 'Login'}
+                </button>
+
+                <button type="button" onClick={handle} className="button">
+                    Cadastrar
+                </button>
+
+                <button type="button" onClick={handleHome} className="button">
+                    Home
                 </button>
             </form>
         </div>
