@@ -2,12 +2,13 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import './Cadastro.css';
 import { http } from "../../App";
-
+import { useNavigate } from 'react-router-dom';
 const Cadastro = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate(); 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
